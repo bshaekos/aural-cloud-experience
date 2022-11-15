@@ -7,6 +7,8 @@ public class ParticleFaceScale : MonoBehaviour
     private float scaleMultiplier;
     
     Vector3 initialScale;
+    [SerializeField] float randomValMin;
+    [SerializeField] float randomValMax;
     float randomVal;
 
     public Particle particle;
@@ -19,7 +21,7 @@ public class ParticleFaceScale : MonoBehaviour
     
     void Start()
     {
-        randomVal = Random.Range(1f, 6f);
+        randomVal = Random.Range(randomValMin, randomValMax);
     }
 
     void Update()

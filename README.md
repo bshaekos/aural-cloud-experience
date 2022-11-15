@@ -1,1 +1,1 @@
-# thesis_studio
+# Unity Code for Graduate Thesis

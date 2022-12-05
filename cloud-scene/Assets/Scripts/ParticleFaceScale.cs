@@ -11,7 +11,7 @@ public class ParticleFaceScale : MonoBehaviour
     [SerializeField] float randomValMax;
     float randomVal;
 
-    public Particle particle;
+    public Cloud particle;
 
     
     void Awake()
@@ -26,26 +26,26 @@ public class ParticleFaceScale : MonoBehaviour
 
     void Update()
     {
-        ParticlePieceScale();
+        //ParticlePieceScale();
     }
 
     // particle pieces scale randomly
-    public void ParticlePieceScale()
-    {
-        float playerDist = particle.DistanceFromPlayer();
-        if (playerDist <= particle.scaleDist)
-        {
-            scaleMultiplier = 6f;
-            transform.localScale = (initialScale * randomVal / playerDist) * scaleMultiplier;
-        }
+    // public void ParticlePieceScale()
+    // {
+    //     float playerDist = particle.DistanceFromPlayer();
+    //     if (playerDist <= particle.scaleDist)
+    //     {
+    //         scaleMultiplier = 6f;
+    //         transform.localScale = (initialScale * randomVal / playerDist) * scaleMultiplier;
+    //     }
 
-        if (playerDist > particle.scaleDist)
-        {
-            scaleMultiplier = 4f;
-            transform.localScale = (initialScale / playerDist) * scaleMultiplier;
-        }
+    //     if (playerDist > particle.scaleDist)
+    //     {
+    //         scaleMultiplier = 4f;
+    //         transform.localScale = (initialScale / playerDist) * scaleMultiplier;
+    //     }
         
-    }
+    // }
 
     // slowly inflate the object
     // private void Inflate(float scaleToValue, Transform faceScale)

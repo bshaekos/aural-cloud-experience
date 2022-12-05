@@ -5,23 +5,21 @@ using UnityEngine;
 public class LineController : MonoBehaviour
 {
     LineRenderer lineRenderer;
-    Transform[] nodes;
+    private Transform target;
 
     void Awake()
     {
         lineRenderer = GetComponent<LineRenderer>();
     }
 
-    public void SetUpLine(Transform[] nodes)
+    void Update()
     {
-        lineRenderer.positionCount = nodes.Length;
-        this.nodes = nodes;
+        lineRenderer.SetPosition(1, target.position);
     }
-    void LateUpdate()
+    public void AssignTarget (Vector3 nodePosition, Transform newTarget)
     {
-        for( int i = 0; i < nodes.Length; i++)
-        {
-            lineRenderer.SetPosition(i, nodes[i].position);
-        }
+        lineRenderer.positionCount = 2;
+        lineRenderer.SetPosition(0, nodePosition);
+        target = newTarget;
     }
 }

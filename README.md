@@ -1,4 +1,5 @@
-# Unity Code for Graduate Thesis
+# Aural Clouds
+Work-in-progress for Media Design Practices Spring 2023 Thesis
 
 Aural Clouds is a sound-and-location based social network that is manifested and accessed in Mixed Reality as a type of “social weather.”
 

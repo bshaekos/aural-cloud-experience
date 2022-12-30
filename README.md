@@ -15,3 +15,6 @@ Fundamentally, this sound-and-space project intends to center accessibility for 
 ![Aural-Clouds-Stratus-360-5](https://user-images.githubusercontent.com/76088958/209496986-ca306129-494f-49cd-a12b-6634feaa7557.gif)
 
 ![Aural-Clouds-Nimbus -GIF-360-5](https://user-images.githubusercontent.com/76088958/209496901-37234a36-cce5-43c6-a058-dea26c4edc70.gif)
+
+Full video of Experience:
+https://vimeo.com/blakeshae/aural-clouds

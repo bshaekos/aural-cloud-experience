@@ -20,6 +20,6 @@ Full video of Experience:
 
 https://vimeo.com/blakeshae/aural-clouds
 
-Project Documentation:
+Full Project Documentation:
 
 https://www.blakeshaekos.com/work/aural-clouds

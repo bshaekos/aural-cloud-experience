@@ -19,3 +19,7 @@ Fundamentally, this sound-and-space project intends to center accessibility for 
 Full video of Experience:
 
 https://vimeo.com/blakeshae/aural-clouds
+
+Project Documentation:
+
+https://www.blakeshaekos.com/work/aural-clouds

@@ -1,4 +1,6 @@
 # Aural Clouds
+
+### Project Description 
 Work-in-progress for Media Design Practices Spring 2023 Thesis
 
 Aural Clouds is a sound-and-location based social network that is manifested and accessed in Mixed Reality as a type of “social weather.”
@@ -16,10 +18,10 @@ Fundamentally, this sound-and-space project intends to center accessibility for 
 
 ![Aural-Clouds-Nimbus -GIF-360-5](https://user-images.githubusercontent.com/76088958/209496901-37234a36-cce5-43c6-a058-dea26c4edc70.gif)
 
-Full video of Experience:
+### Full video of Experience:
 
 https://vimeo.com/blakeshae/aural-clouds
 
-Full Project Documentation:
+### Full Project Documentation:
 
 https://www.blakeshaekos.com/work/aural-clouds

@@ -18,6 +18,13 @@ public class PlayerMovement : MonoBehaviour
     Vector3 velocity;
     bool isGrounded;
 
+    private Animator anim;
+
+    void Start()
+    {
+        anim = GetComponentInChildren<Animator>();
+    }
+
     void Update()
     {
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
@@ -41,7 +48,18 @@ public class PlayerMovement : MonoBehaviour
 
         velocity.y += gravity * Time.deltaTime;
 
-        controller.Move(velocity * Time.deltaTime);  
-        
+        controller.Move(velocity * Time.deltaTime);
+
+        if(move.x > 0 || move.z > 0)
+        {
+            anim.SetFloat("Speed", 1);
+            //Debug.Log("I'm moving.");
+        }
+        else
+        {
+            anim.SetFloat("Speed", 0);
+            //Debug.Log("I'm not moving.");
+        }
     }
+
 }

@@ -7,11 +7,12 @@ public class AudioTrailSpawner : MonoBehaviour
     [SerializeField] private List<GameObject> audioBreadcrumbs;
 
     public PlayerMovement player;
+    [SerializeField] private float spawnTime = 0.1f;
     private int indexNum;
     private float counter;
 
-    public Node node1;
-    public Node node2;
+    // public Node node1;
+    // public Node node2;
 
     void Start()
     {
@@ -22,20 +23,24 @@ public class AudioTrailSpawner : MonoBehaviour
     void Update()
     {
         // once player starts moving, new audio breadcrumbs are created
-        if (node1.audioNoteTrig | node2.audioNoteTrig == false)
+        // if (node1.audioNoteTrig | node2.audioNoteTrig == false)
+        // {
+        // }
+        if(player.move != Vector3.zero)
         {
-            if(player.move != Vector3.zero)
+            //Debug.Log("I'm moving");
+            if (counter >= spawnTime)
             {
-                //Debug.Log("I'm moving");
-                if (counter >= 1f)
-                {
-                    CreateAudioBreadcrumb();
-                    counter = 0;
-                }
+                CreateAudioBreadcrumb();
+                counter = 0;
             }
-            counter += Time.deltaTime;
-            //Debug.Log(counter);
         }
+        // if(player.move == Vector3.zero)
+        // {
+        //     indexNum = 0;
+        // }
+        counter += Time.deltaTime;
+        //Debug.Log(counter);
 
     }
 

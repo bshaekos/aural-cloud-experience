@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Audio;
 
 [System.Serializable]
 public class Sound
@@ -11,6 +12,7 @@ public class Sound
     public float dopplerLevel;
     public float minDistance;
     public float maxDistance;
+    public AudioMixerGroup audioMixerGroup;
 
     public Sound(string _name, AudioClip _clip)
     {

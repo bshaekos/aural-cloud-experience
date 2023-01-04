@@ -1,13 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class Node : MonoBehaviour
 {
     public Transform player;
     public float playerDistTrig = 2f;
     [SerializeField] private List<Cloud> allClouds;
-    private List<LineController> allLines;
+    
+    private List<LineController> cloudLines;
 
     public ParticleSystem ripple;
     [SerializeField] private GameObject audioUIPlaying;
@@ -16,22 +18,24 @@ public class Node : MonoBehaviour
 
     [SerializeField] private AudioClip audioNote;
 
+    [SerializeField] private AudioMixerGroup audioNoteAudioMixerGroup;
+    [SerializeField] private Transform cloudCluster;
     public bool audioNoteTrig; 
 
-    AudioManager audioManager;
+    public AudioManager audioManager;
 
-    public GameObject audioManagerPrefab;
+    //public GameObject audioManagerPrefab;
 
     private Sound audioNoteClip;
 
     void Awake()
     {   
         //instantiate a line to connect node and cloud form(s)
-        allLines = new List<LineController>();
+        cloudLines = new List<LineController>();
         for (int i = 0; i < allClouds.Count; i++)
         {
             LineController newLine = Instantiate(linePrefab);
-            allLines.Add(newLine);
+            cloudLines.Add(newLine);
 
             newLine.AssignTarget(transform.position, allClouds[i].transform);
             newLine.gameObject.SetActive(false);
@@ -41,8 +45,9 @@ public class Node : MonoBehaviour
     void Start()
     { 
         //audiomanager  gameobject created in the scene
-        var obj = Instantiate(audioManagerPrefab, transform.position, transform.rotation);
-        audioManager = obj.GetComponent<AudioManager>();
+        //var obj = Instantiate(audioManagerPrefab, transform.position, transform.rotation);
+        //audioManager = obj.GetComponent<AudioManager>();
+        //audioManager.transform.SetParent(cloudCluster);
         
         //ui icon for when audio note is playing
         audioUIPlaying.SetActive(false);
@@ -54,13 +59,16 @@ public class Node : MonoBehaviour
         audioNoteClip.clip = audioNote;
         audioNoteClip.loop = false;
         audioNoteClip.volume = 1f;
+        audioNoteClip.audioMixerGroup = audioNoteAudioMixerGroup;
 
         audioNoteTrig = false;
     }
 
     void Update()
     {
-        foreach (var line in allLines)
+        
+        //sets each line to active
+        foreach (var line in cloudLines)
         {
             line.gameObject.SetActive(true);
         }
@@ -127,12 +135,6 @@ public class Node : MonoBehaviour
     {
         yield return new WaitForSeconds(1f);
         audioManager.SwapAudio(audioNoteClip);
-    }
-
-    private void SetAudioNoteSource(Sound sound)
-    {
-        
-
     }
 
 }

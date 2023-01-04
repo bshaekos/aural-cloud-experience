@@ -26,8 +26,8 @@ public class Cloud : MonoBehaviour
 
 
     SpriteRenderer cloudSpriteRenderer;
-    Color noCloudColor = new Color(255, 255, 255, 0);
-    Color fullCloudColor = new Color(255, 255, 255, 1f);
+    // Color noCloudColor = new Color(255, 255, 255, 0);
+    // Color fullCloudColor = new Color(255, 255, 255, 1f);
 
 
     void Start()
@@ -38,6 +38,7 @@ public class Cloud : MonoBehaviour
 
         cloudMovedOut = false;
 
+        initialPos = node.transform.localPosition;
         transform.localPosition = initialPos;
         transform.localScale = initialScale;
         //cloudSpriteRenderer.color = noCloudColor;

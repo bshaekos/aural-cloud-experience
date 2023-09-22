@@ -28,16 +28,16 @@ https://www.blakeshaekos.com/work/sonus
 
 To provide public access to my work, I created an interactive exhibition. 
 
-I coded the audio in SuperCollider and developed an interactive prototype between SuperCollider and a Raspberry Pi with Python and OSC. Ultimately, the interactive element was not used in the final exhibition. Instead I used the Raspberry Pi to playback audio and video. 
+I coded the audio effects of publicly recorded audio in SuperCollider and prototyped an interactive interface between SuperCollider and a Raspberry Pi using Python and OSC. Ultimately, the interactive element was not used in the final exhibition due to time constraints and lack of buy-in from Thesis Advisor. Therefore, I used the Raspberry Pi to playback audio created within SuperCollider and video recorded at various locations around Los Angeles. 
 
 
 <img width="1920" alt="SuperColliderInterface" src="https://github.com/bshaekos/aural-cloud-experience/assets/76088958/42145fc3-6d77-4476-a2c7-002b9e4510c0">
 
 https://vimeo.com/867293963?share=copy
 
-https://vimeo.com/blakeshae/rpi-interaction?share=copy
-
 ![WIP-UI-230206](https://github.com/bshaekos/aural-cloud-experience/assets/76088958/7108ea8f-6a28-4542-ae35-18349e87ea95)
+
+https://vimeo.com/blakeshae/rpi-interaction?share=copy
 
 ### Final Gallery Installation
 ![Aural_Clouds-Installation-v2](https://github.com/bshaekos/aural-cloud-experience/assets/76088958/144c65a1-57c1-4483-8740-4df336272a28)

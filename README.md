@@ -1,9 +1,7 @@
-# Aural Clouds
+# Sonus
 
 ### Project Description 
-Work-in-progress for Media Design Practices Spring 2023 Thesis
-
-Aural Clouds is a sound-and-location based social network that is manifested and accessed in Mixed Reality as a type of “social weather.”
+Sonus is a sound-and-location based social network.
 
 Recordings are posted in physical locations, to be later encountered by others when they visit those locations. As these posts accumulate in space, they form visible “clouds.” As with atmospheric clouds, these assume abstract but classifiable forms reflective of dynamic and emergent conditions––in this case, social rather than meteorological.
 
@@ -25,3 +23,16 @@ https://vimeo.com/blakeshae/aural-clouds
 ### Full Project Documentation:
 
 https://www.blakeshaekos.com/work/sonus
+
+## Interactive Exhibition 
+
+To provide public access to my work, I created an interactive exhibition. Below you'll my work for the exhibition. 
+<img width="1920" alt="SuperColliderInterface" src="https://github.com/bshaekos/aural-cloud-experience/assets/76088958/42145fc3-6d77-4476-a2c7-002b9e4510c0">
+
+https://vimeo.com/867293963?share=copy
+
+![WIP-UI-230206](https://github.com/bshaekos/aural-cloud-experience/assets/76088958/7108ea8f-6a28-4542-ae35-18349e87ea95)
+
+### Final Gallery Installation
+![Aural_Clouds-Installation-v2](https://github.com/bshaekos/aural-cloud-experience/assets/76088958/144c65a1-57c1-4483-8740-4df336272a28)
+
